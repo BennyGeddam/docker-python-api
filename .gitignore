@@ -1,3 +1,8 @@
 .venv
 _pycache_/
 *.pyc
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
