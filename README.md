@@ -40,7 +40,12 @@ docker run -p 5000:5000 docker-python-api
 
 Python · Flask · Docker · pytest · Git
 
+## Continuous integration
+
+GitHub Actions runs the pytest suite on Python 3.14, matching the Docker image, on every push and pull request. If the tests pass, a second job builds the Docker image. The workflow can also be started manually from the Actions tab.
+
+The pipeline validates the project; it does not publish images or deploy the application.
+
 ## Roadmap
 
-- GitHub Actions pipeline to run tests and build the image on every push
 - Deploy to Kubernetes
